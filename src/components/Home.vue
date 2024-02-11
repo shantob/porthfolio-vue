@@ -49,7 +49,7 @@ export default {
     },
     methods: {
         downloadPDF() {
-            const pdfPath = '/CV/cv.shanto_bepary'; // Use a relative path
+            const pdfPath = '/CV/cv.pdf'; // Use a relative path
 
             const link = document.createElement('a');
             link.href = pdfPath;
