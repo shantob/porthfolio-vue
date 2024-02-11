@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-2 col-xl-2">
                     <div class="logo">
-                      <img src="@/assets/logo.png" alt="Logo">
+                      <img src="../../public/logo.jpg" alt="Logo">
                     </div>
                 </div>
                 <div class="col-6 col-md-6 col-lg-10 col-xl-10">
@@ -20,7 +20,6 @@
                                     <li class="nav-item"><router-link class="nav-link" to="/About">{{ about }}</router-link></li>
                                     <li class="nav-item"><router-link class="nav-link" to="/Resume">{{ resume }}</router-link></li>
                                     <li class="nav-item"><router-link class="nav-link" to="/Portfolio">{{ portfolio }}</router-link></li>
-                                    <li class="nav-item"><router-link class="nav-link" to="/Blog">{{ blog }}</router-link></li>
                                     <li class="nav-item"><router-link class="nav-link" to="/Contact">{{ contact }}</router-link></li>
                                 </ul>
                             </div>
@@ -44,7 +43,6 @@
               about: "About",
               resume: "Resume",
               portfolio: "Portfolio",
-              blog: "Blog",
               contact: "Contact"
           }
       },

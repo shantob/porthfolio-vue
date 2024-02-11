@@ -6,7 +6,6 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Resume from './components/Resume.vue'
 import portfolio from './components/Portfolio.vue'
-import Blog from './components/Blog.vue'
 import Contact from './components/Contact.vue'
 import PageNotFound from './components/PageNotFound.vue'
 
@@ -36,11 +35,6 @@ const routes = [
       name: 'portfolio',
       path: '/portfolio',
       component: portfolio
-    },
-    {
-      name: 'Blog',
-      path: '/Blog',
-      component: Blog
     },
     {
       name: 'Contact',

@@ -51,16 +51,22 @@
                                 <div class="row">
                                     <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                                         <div class="cv-btn">
-                                            <button type="submit">Download CV<i class="fa fa-download" aria-hidden="true"></i></button>
+                                            <button @click="downloadPDF">Download CV<i class="fa fa-download" aria-hidden="true"></i></button>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-7 col-lg-7 col-xl-7">
                                         <div class="social-media">
-                                            <a href="#"><img src="@/assets/social-media/twitter.png" alt="twitter"></a>
-                                            <a href="#"><img src="@/assets/social-media/instgram.png" alt="instgram"></a>
-                                            <a href="#"><img src="@/assets/social-media/facebook.png" alt="facebook"></a>
-                                            <a href="#"><img src="@/assets/social-media/linkedin.png" alt="linkedin"></a>
-                                            <a href="#"><img src="@/assets/social-media/github.png" alt="github"></a>
+                                            <a target="_blank" href="https://github.com/shantob"><img src="@/assets/social-media/github.png" alt="github"></a>
+
+                                            <a target="_blank" href='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwxGgCsmZGdtWkLqfNmkvfVwWfKVPKdlGXmFwPcRlfLjmPlscvzMqKwccsvvWnfQqcljx'>
+                                                <img src="https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI" alt="gmail"></a>
+
+                                            <a target="_blank" href="https://twitter.com/BeparyShan32224"><img src="@/assets/social-media/twitter.png" alt="twitter"></a>
+                                        
+                                            <a href="https://www.linkedin.com/in/shanto-bepary-276215207/" target='_blank'><img src="@/assets/social-media/linkedin.png" alt="linkedin"></a>
+                                            
+                                            <a href='http://wa.me/+8801780768085'   target='_blank'><img src="https://img.freepik.com/free-psd/whatsapp-icon-isolated-3d-render-illustration_47987-9785.jpg" alt="linkedin"></a>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -131,37 +137,49 @@
 
         cartItems: [
                 { 
-                    images: require("@/assets/png/html.png"),
+                    images: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png",
                     name: 'Laravel Web Application',
-                    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.'
+                    text: 'I have 3 Year work experience . Here 2 years In office experience and one year self experience.'
                 },
                 { 
-                    images: require("@/assets/png/psd-file.png"),
+                    images: "https://miro.medium.com/v2/resize:fit:1200/1*y6C4nSvy2Woe0m7bWEn4BA.png",
                     name: 'React Js Porthfolio/Fontend Application',
-                    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.'
-                },
-                { 
-                    images: require("@/assets/png/creative.png"),
-                    name: 'Vue Js Porthfolio/Fontend Application',
-                    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.'
+                    text: 'I know React Js for frontend design and view show with components. Without reload page routing and super first web application . I also experience with it 1 year +'
                 },
                 { 
                     images: require("@/assets/png/letter-v.png"),
-                    name: 'Nuxt Js Fontend Application',
-                    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.'
+                    name: 'Vue Js Porthfolio/Fontend Application',
+                    text: 'I know Vue Js for frontend design and view show with components. Without reload page routing and super first web application . I also experience with 1 year.'
                 },
                 { 
-                    images: require("@/assets/png/avatar.png"),
-                    name: 'Full SZtack Web Application',
-                    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.'
+                    images: "https://www.remoterocketship.com/images/blog/Nuxt-icon-for-blog.jpg",
+                    name: 'Nuxt Js Fontend Application',
+                    text: 'I know Nuxt Js for frontend design and view show with components and more valuable for this another featcher for seo and vary easy working. Without reload page routing and super first web application . I also experience with 1 year'
+                },
+                { 
+                    images: 'https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg',
+                    name: 'Full Stack Web Application',
+                    text: 'I know Full Stack web application to make api and connet with frontend and backend by json response. I also experience with it lust 1 year'
                 },
                 { 
                     images: require("@/assets/png/responsive-design.png"),
                     name: 'Api Intregration For Mobile app',
-                    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since.'
+                    text: 'I know Api Intregration for made external mobile application by json response. I also experience with it lust 2 year'
                 },
             ]
         };
+    },
+    methods: {
+        downloadPDF() {
+            const pdfPath = '/CV/cv.shanto_bepary'; // Use a relative path
+
+            const link = document.createElement('a');
+            link.href = pdfPath;
+            link.download = 'shanto_bepary.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     },
     components: {
         Cart,
@@ -170,6 +188,7 @@
         Scroll
         },
     };
+ 
 </script>
 <!-----=====|| {( END:- ABOUT JAVASCRIPT )} ||=====----->
 

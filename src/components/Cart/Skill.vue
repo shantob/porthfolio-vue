@@ -15,18 +15,26 @@
                 <div class="animated-progress progressColor"><span data-progress="60"></span></div>
             </div>
             <div class="progres">
-                <p>Web Design <span>75 %</span></p>
+                <p>Bootstrap/Tailwind <span>75 %</span></p>
                 <div class="animated-progress progressColor"><span data-progress="75"></span></div>
             </div>
             <div class="progres">
-                <p>JavaScript <span>85 %</span></p>
-                <div class="animated-progress progressColor"><span data-progress="85"></span></div>
+                <p>JavaScript <span>80 %</span></p>
+                <div class="animated-progress progressColor"><span data-progress="80"></span></div>
+            </div>
+            <div class="progres">
+                <p>React Js <span>70 %</span></p>
+                <div class="animated-progress progressColor"><span data-progress="70"></span></div>
             </div>
         </div>
         <div class="col-12 col-md-12 col-lg-6 col-xl-6">
             <div class="progres">
                 <p>Vue js <span>60 %</span></p>
                 <div class="animated-progress progressColor"><span data-progress="60"></span></div>
+            </div>
+            <div class="progres">
+                <p>Nuxt js <span>60 %</span></p>
+                <div class="animated-progress progressColor"><span data-progress="65"></span></div>
             </div>
             <div class="progres">
                 <p>PHP <span>75 %</span></p>

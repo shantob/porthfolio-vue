@@ -23,18 +23,18 @@
                                     <h1>Education</h1>
                                     <div class="border-msg">
                                         <div class="message">
-                                            <h6>Computer Science</h6>
-                                            <p v-html="msg"></p>
+                                            <h6>SECONDERY SCHOOL CERTIFICATE</h6>
+                                            <p >I compleate my SSC Examination from  West Fulhar High School . Get result 4.82 (5.00)</p>
                                             <img :src="images" alt="images">
                                         </div>
                                         <div class="message">
-                                            <h6>Bachelor Degree</h6>
-                                            <p v-html="msg"></p>
+                                            <h6>DIPLOMA IN COMPUTER</h6>
+                                            <p >I compleate my diploma course from a non goverment institution. Name Sundarban Institute Of Tecnology . Get result 3.78 (4.00)</p>
                                             <img :src="images" alt="images">
                                         </div>
                                         <div class="message">
-                                            <h6>Master Degree</h6>
-                                            <p v-html="msg"></p>
+                                            <h6>BSC IN CSE</h6>
+                                            <p >I continue my Bachelor course From North Western University. My Seassion is fall-2023</p>
                                             <img :src="images" alt="images">
                                         </div>
                                     </div>
@@ -45,18 +45,18 @@
                                     <h1>Experience</h1>
                                     <div class="border-msg">
                                         <div class="message">
-                                            <h6>Software Engineer</h6>
-                                            <p v-html="msg"></p>
+                                            <h6>FULL STACK DEVELOPER</h6>
+                                            <p >At present I continue a job in Matjel LTD company in the post of Full stack developer (Laravel + Vue Js/ React Js) from 20 june 2023 to now</p>
                                             <img :src="images" alt="images">
                                         </div>
                                         <div class="message">
-                                            <h6>Back-End Developer</h6>
-                                            <p v-html="msg"></p>
+                                            <h6>JUNIOR BACKEND DEVELOPER</h6>
+                                            <p>From 03 January 2023 to 15 June 2023 I continue a job in the post of Junior Backend Developer in SPINNER TEACH SOFTWARE LTD</p>
                                             <img :src="images" alt="images">
                                         </div>
                                         <div class="message">
-                                            <h6>UI/UX Designer</h6>
-                                            <p v-html="msg"></p>
+                                            <h6>INTERN DEVELOPER</h6>
+                                            <p > I Compleate Intern From PONDIT ID. In the post of PHP With Laravel Framework</p>
                                             <img :src="images" alt="images">
                                         </div>
                                     </div>
@@ -70,7 +70,6 @@
                         <!-----=====|| {( END:- MY-SKILL )} ||=====----->
                         <!-----=====|| {( START:- MY-SKILL )} ||=====----->
                         
-                        <Office />
                             
                         <!-----=====|| {( END:- MY-SKILL )} ||=====----->
                     </div>
@@ -84,7 +83,6 @@
 <!-----=====|| {( START:- RESUME JAVASCRIPT )} ||=====----->
 <script>
     import Skill from './Cart/Skill.vue'
-    import Office from './Cart/Office.vue'
     import Scroll from './Cart/ScrollBar.vue'
 
     export default {
@@ -104,7 +102,6 @@
         },
         components: {
             Skill,
-            Office,
             Scroll
         }
     }
