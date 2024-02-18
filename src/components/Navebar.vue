@@ -1,7 +1,7 @@
 <!-----=====|| {( START:- NAVEBAR )} ||=====----->
 <template>
     <div class="container">
-        <div class="all-navs">
+        <div class="all-navs ">
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-2 col-xl-2">
                     <div class="logo">
@@ -59,6 +59,7 @@
 <style>
     .all-navs {
       position: absolute;
+      box-shadow: 0 2px 4px 0 rgba(57, 57, 57, 0.2);
     }
     .logo img {
       width: 40px;
