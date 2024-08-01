@@ -46,6 +46,14 @@ export default {
             popupText: '',
             items: [
                 {
+                    images:'https://dcassetcdn.com/design_img/3987175/838431/27840556/a9qgtnr1h8321t4afggmzbxpk0_image.jpg',
+                    link: 'https://alnoorbazar.com/'
+                },
+                {
+                    images: 'https://mistribari.umait.xyz/files/icons/1055368776.jpeg',
+                    link: 'https://mistribari.umait.xyz/'
+                },
+                {
                     images: require('@/assets/jpg/news.jpg'),
                     link: 'https://news.matjelltd.com/'
                 },
@@ -61,11 +69,6 @@ export default {
                     images: require('@/assets/jpg/make.jpg'),
                     link: 'https://makeandgain.com/'
                 },
-                {
-                    images: require('@/assets/jpg/porth.jpg'),
-                    link: 'https://porthfolio-rzj6.vercel.app/'
-                }
-
             ]
         }
     },
