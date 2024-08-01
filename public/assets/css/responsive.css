@@ -17,6 +17,10 @@
     .carousel-control-prev { left: 1070px !important; }
 
     .carousel-control-next { right: 40px !important; }
+
+    .languge-btn { margin-top: 100px !important; }
+
+    .media { top: 490px !important; }
 }
 
 
@@ -78,6 +82,10 @@
     .contact-icon i { margin-top: 84px !important; }
 
     .contact-icon i:first-child { margin-top: 0px !important; }
+
+    .languge-btn { margin-top: 100px !important; }
+
+    .media { top: 490px !important; }
 }
 
 
@@ -119,8 +127,24 @@
     .blog-background { height: 3800px !important; }
 
     .contact-background { height: 1350px !important; }
+
+
+    .languge-btn { margin-top: 100px !important; }
+
+    .media { top: 490px !important; }
 }
 
+
+@media screen and (max-width: 684px){
+
+    .logo { left: 475px; top: 15px; }
+
+    .typeing-skill p { width: 500px !important; }
+
+    .languge-btn { margin-top: 100px !important; }
+
+    .media { top: 490px !important; }
+}
 
 
 @media screen and (max-width: 640px){

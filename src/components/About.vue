@@ -65,7 +65,7 @@
                                         
                                             <a href="https://www.linkedin.com/in/shanto-bepary-276215207/" target='_blank'><img src="@/assets/social-media/linkedin.png" alt="linkedin"></a>
                                             
-                                            <a href='http://wa.me/+8801780768085'   target='_blank'><img src="https://img.freepik.com/free-psd/whatsapp-icon-isolated-3d-render-illustration_47987-9785.jpg" alt="linkedin"></a>
+                                            <a href='http://wa.me/+8801781768085'   target='_blank'><img src="https://img.freepik.com/free-psd/whatsapp-icon-isolated-3d-render-illustration_47987-9785.jpg" alt="linkedin"></a>
                                            
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
     },
     methods: {
         downloadPDF() {
-            const pdfPath = '/CV/cv.pdf'; // Use a relative path
+            const pdfPath = '/CV/CV.pdf'; // Use a relative path
 
             const link = document.createElement('a');
             link.href = pdfPath;

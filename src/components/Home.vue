@@ -9,7 +9,7 @@
                             <div class="col-12 col-md-12 col-lg-12 col-xl-12 p-0">
                                 <div class="typeing-skill">
                                     <h1>{{ name }} <span ref="autoType" class="typing-animation"></span></h1>
-                                    <p class="text-info">{{ description }}</p>
+                                    <p class="text-warning">{{ description }}</p>
                                     <button @click="downloadPDF" class="btn btn-info">Download CV <i class="fa fa-download"
                                             aria-hidden="true"></i></button>
                                 </div>
@@ -17,11 +17,11 @@
                         </div>
                     </div>
                     <div class="media">
-                        <a href="#"><img src="@/assets/social-media/twitter.png" alt="twitter"></a>
-                        <a href="#"><img src="@/assets/social-media/instgram.png" alt="instgram"></a>
-                        <a href="#"><img src="@/assets/social-media/facebook.png" alt="facebook"></a>
-                        <a href="#"><img src="@/assets/social-media/linkedin.png" alt="linkedin"></a>
-                        <a href="#"><img src="@/assets/social-media/github.png" alt="github"></a>
+                        <a target="_blank" href="http://wa.me/+8801781768085"><img src="https://img.freepik.com/free-psd/whatsapp-icon-isolated-3d-render-illustration_47987-9785.jpg" alt="Whatsapp"></a>
+                        <a target="_blank" href="https://twitter.com/BeparyShan32224"><img src="@/assets/social-media/twitter.png" alt="twiter"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shanto-bepary-276215207/"><img src="@/assets/social-media/linkedin.png" alt="linkedin"></a>
+                        <a target="_blank" href="https://github.com/shantob"><img src="@/assets/social-media/github.png" alt="github"></a>
+                        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwxGgCsmZGdtWkLqfNmkvfVwWfKVPKdlGXmFwPcRlfLjmPlscvzMqKwccsvvWnfQqcljx"><img src="https://static.vecteezy.com/system/resources/previews/016/716/465/original/gmail-icon-free-png.png" alt="gmail"></a>
                     </div>
                     <div class="languge-btn">
                         <button type="submit">ENG</button>
@@ -49,7 +49,7 @@ export default {
     },
     methods: {
         downloadPDF() {
-            const pdfPath = '/CV/cv.pdf'; // Use a relative path
+            const pdfPath = '/CV/CV.pdf'; // Use a relative path
 
             const link = document.createElement('a');
             link.href = pdfPath;
@@ -107,14 +107,19 @@ export default {
     background-image: url('@/assets/img/bg.jpeg');
     background-size: cover;
     background-position: center;
+    z-index: 0;
 }
 
+.banner-img::before{
+    background: rgba(0, 0, 0, 0.5);
+}
 .typing-animation {
     color: #fff;
 }
 
 .typeing-skill {
     margin-top: 310px;
+    background: rgba(52, 52, 52, 0.5);
 }
 
 .typeing-skill h1 {
